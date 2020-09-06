@@ -17,6 +17,11 @@
 // 5381579886310193
 // 5261400319746371
 
+
+
+
+
+
 ///////////////////////
 
 // DESAFIO - saudar clientes
@@ -52,3 +57,25 @@ const baseClientes = {
     visitas: 3,
   },
 }
+
+function saudarCliente(nomeCliente) {
+  const cliente = baseClientes[nomeCliente]
+
+  let mensagem
+
+  if (cliente === undefined || cliente.visitas === 0) {
+    mensagem = 'Olá, é a primeira vez por aqui?'
+  }
+  else if (cliente.visitas === 1) {
+    mensagem = `Bem-vinda, ${nomeCliente}! Que bom que voltou!`
+  }
+  else {
+    mensagem = `Bem-vinda mais uma vez, ${nomeCliente}!`
+  }
+
+  return mensagem
+}
+
+console.log(saudarCliente('Chiquinha'))
+console.log(saudarCliente('Clotilde'))
+console.log(saudarCliente('Florinda'))
