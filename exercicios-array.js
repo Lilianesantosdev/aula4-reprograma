@@ -20,9 +20,9 @@ imprimeIndiceElemento(["banana", "gatinho", "brócolis"])
 
 const numeroIndice = ["banana", "gatinho", "brócolis"]
 for (let i = 0; i < numeroIndice.length; i++) {
+    console.log(`índice: ${i}, elemento: ${numeroIndice[i]}`)
 
 }
-console.log(`índice: ${i}, elemento: ${números[i]}`)
 
 
 // 2) Crie uma função que receba uma array de números inteiros e retorne a soma dos elementos.
@@ -63,7 +63,7 @@ console.log(maioresQueCinco([88, 55, 0, 2, 85, 81, 24, 12]))
 
 console.log("Exercicio 4")
 
-function maioresQueCinco(arr, numeroComparacao) {
+function maioresQueNumeroComparacao(arr, numeroComparacao) {
     const numerosMaiores = []
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > numeroComparacao) {
@@ -72,7 +72,7 @@ function maioresQueCinco(arr, numeroComparacao) {
     }
     return numerosMaiores
 }
-console.log(maioresQueCinco([88, 55, 0, 2, 85, 81, 24, 12], 20))
+console.log(maioresQueNumeroComparacao([88, 55, 0, 2, 85, 81, 24, 12], 20))
 
 
 // 5) Crie uma função que receba uma array de números inteiros e retorne o maior número encontrado.

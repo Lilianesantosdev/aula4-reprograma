@@ -31,7 +31,7 @@ const meuLivro = objLivro('liliane', 500, 'liliane santos')
 
 function sobreLivro(obj) {
 
-    return `O livro ${obj.titulo} foi escrito por ${obj.autor} e tem ${obj.paginas} páginas.`
+    return `O livro ${obj.titulo} foi escrito por ${obj.autoria} e tem ${obj.paginas} páginas.`
 }
 console.log(sobreLivro(meuLivro))
 
@@ -47,6 +47,9 @@ console.log(sobreLivro(meuLivro))
 //   sobrenome: 'Tedesco',
 //   nomeCompleto: 'Nazaré Tedesco'
 // }
+
+
+console.log ("EXERCICIO 3")
 
 const pessoa = {
     nome: 'Nazaré',
